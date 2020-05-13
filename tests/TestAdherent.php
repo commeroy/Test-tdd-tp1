@@ -11,7 +11,7 @@ final class TestAdherent extends TestCase
     {
         $this->assertInstanceOf(
             Adherent::class,
-            new Adherent("yann")
+            new Adherent("commerot", "yann", "20/01/1998")
         );
     }
 }
