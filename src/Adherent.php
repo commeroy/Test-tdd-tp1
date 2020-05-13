@@ -17,6 +17,6 @@ final class Adherent
     }
 
     public function idNormalise(){
-        return "";
+        return strtolower($this->prenom." ".$this->nom." ".$this->dateNaissance);
     }
 }
