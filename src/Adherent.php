@@ -1,7 +1,3 @@
 <?php
 
-
-class Adherent
-{
-    //test
-}
+declare(strict_types=1);
