@@ -7,7 +7,6 @@ final class Adherent
     private $nom;
     private $prenom;
     private $dateNaissance;
-    private $idNormalise;
 
     public function __construct($nom, $prenom, $dateNaissance)
     {

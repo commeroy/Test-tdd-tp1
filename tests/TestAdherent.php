@@ -20,4 +20,10 @@ final class TestAdherent extends TestCase
         $adh = new Adherent("Commerot", "Yann", "20/01/1998");
         $this->assertEquals("yann commerot 20/01/1998", $adh->idNormalise());
     }
+
+    public function testTiret(): void
+    {
+        $adh = new Adherent("Commerot", "Jean-Charles", "20/01/1998");
+        $this->assertEquals("jean charles commerot 20/01/1998", $adh->idNormalise());
+    }
 }
