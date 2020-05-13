@@ -7,11 +7,16 @@ final class Adherent
     private $nom;
     private $prenom;
     private $dateNaissance;
+    private $idNormalise;
 
     public function __construct($nom, $prenom, $dateNaissance)
     {
-        $this->nom = strtolower($nom);
+        $this->nom = $nom;
         $this->prenom = $prenom;
         $this->dateNaissance = $dateNaissance;
+    }
+
+    public function idNormalise(){
+        return "";
     }
 }
