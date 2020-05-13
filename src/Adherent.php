@@ -16,6 +16,10 @@ final class Adherent
     }
 
     public function idNormalise(){
-        return strtolower($this->prenom." ".$this->nom." ".$this->dateNaissance);
+        $idNormalise = strtolower($this->prenom." ".$this->nom." ".$this->dateNaissance);
+        if(strpos($idNormalise, '-') !== false) {
+            $idNormalise = str_replace('-', ' ', $idNormalise);
+        }
+        return $idNormalise;
     }
 }
